@@ -2,59 +2,30 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.applications import VGG16
 from tensorflow.keras.layers import Flatten, Dense
 
-# Function to estimate plant height
-def estimate_plant_height(image):
-  # Load pre-trained and fine-tuned height estimation model
-  # ...
-  # Predict height from the image
-  # ...
-  return predicted_height
 
-# Function to estimate plant area
+def estimate_plant_height(image):
+   return predicted_height
+
 def estimate_plant_area(image):
-  # Load pre-trained and fine-tuned segmentation model
-  # ...
-  # Segment the plant and calculate area
-  # ...
   return plant_area
 
-# Function to assess leaf health
 def assess_leaf_health(image):
-  # Load pre-trained and fine-tuned leaf health model
-  # ...
-  # Predict health status of leaves
-  # ...
   return leaf_health_report
 
-# Function to detect and analyze fruits
 def analyze_fruits(image):
-  # Load pre-trained and fine-tuned fruit detection model
-  # ...
-  # Detect and count fruits, predict health for each
-  # ...
-  # Estimate fruit size (optional)
-  # ...
   return fruit_count, fruit_health_report, fruit_size_estimates (optional)
 
-# Function to detect pests and weeds
 def detect_pests_weeds(image):
-  # Load pre-trained and fine-tuned pest/weed detection model
-  # ...
-  # Detect presence and classify types of pests/weeds
-  # ...
   return pest_report, weed_report
 
-# Load your plant image
 plant_image = ...
 
-# Analyze the image using the functions
 plant_height = estimate_plant_height(plant_image)
 plant_area = estimate_plant_area(plant_image)
 leaf_health_report = assess_leaf_health(plant_image)
 fruit_count, fruit_health_report, fruit_size_estimates = analyze_fruits(plant_image)
 pest_report, weed_report = detect_pests_weeds(plant_image)
 
-# Print results and analysis
 print(f"Estimated Plant Height: {plant_height}")
 print(f"Estimated Plant Area: {plant_area}")
 print(f"Leaf Health Report: {leaf_health_report}")
@@ -65,6 +36,5 @@ if fruit_size_estimates:
 print(f"Pest Report: {pest_report}")
 print(f"Weed Report: {weed_report}")
 
-# Analyze the results to determine plant health and lacking characteristics
-# ...
+
 
